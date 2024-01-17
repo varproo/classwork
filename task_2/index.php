@@ -1,9 +1,13 @@
 <?php
-    $count = 12;
-    echo "Этому мальчику $count лет";
-    if ($count < 18){
-        echo "этому мальчику < 18";
+    $count = "rain";
+    if ($count ==   "rain"){
+        echo "$count сегдня";
     }
-    else{
-        echo "Этому мальчику $count лет";
-    }
+    else if ($count ==   "sun"){
+        echo "$count сегдня";
+    }    
+    else if ($count ==   "snow"){
+        echo "$count сегдня";
+    }else {
+        echo "да емае ты на марсе"; 
+}

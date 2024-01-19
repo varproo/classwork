@@ -1,13 +1,17 @@
 <?php
-    $count = "rain";
-    if ($count ==   "rain"){
-        echo "$count сегдня";
+
+// Создаем вложенный массив
+$college = array(
+    "Студенты" => array("Никита", "Гена", "Стас", "Турбо", "Вардан"),
+    "Преподаватели" => array("Крутой перец Андреевич", "Крылова", "Саня", "БЖшник", "Рожков"));
+
+// Перебираем массив для группы лиц
+foreach($college as $people => $items) {
+    echo "<h1>$people</h1>";
+    echo "<ul>";
+    // перебираем массив конкретных людей
+    foreach($items as $item => $value) {
+        echo "<li>$value</li>";
     }
-    else if ($count ==   "sun"){
-        echo "$count сегдня";
-    }    
-    else if ($count ==   "snow"){
-        echo "$count сегдня";
-    }else {
-        echo "да емае ты на марсе"; 
+    echo "</ul>";
 }
